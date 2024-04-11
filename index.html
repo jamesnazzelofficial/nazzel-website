@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website ni [Iyong Pangalan]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loader"></div>
+
+    <header>
+        <h1>Maligayang Pagdating sa Personal Website ko!</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Tungkol sa Akin</a></li>
+            <li><a href="#contact">Makipag-ugnayan</a></li>
+            <!-- Dagdag ng iba pang mga seksyon dito -->
+        </ul>
+    </nav>
+
+    <div class="container">
+        <p>Ako si [Iyong Pangalan], isang simpleng indibidwal na may pagmamahal sa teknolohiya, musika, at sining. Sa website na ito, ibabahagi ko ang aking mga interes, karanasan, at kaalaman sa mundo ng digital.</p>
+        <p>Sumali sa akin habang inilalakbay natin ang iba't ibang paksa, mula sa mga tutorial sa pag-program, mga paboritong playlist ng musika, hanggang sa mga paglalakbay sa iba't ibang destinasyon sa buong mundo.</p>
+        <p>Maraming salamat sa pagbisita at asahan mong palagi kang makakahanap ng bagong impormasyon at inspirasyon dito sa aking website!</p>
+
+        <div class="social-links">
+            <a href="https://discord.com/" target="_blank"><img src="discord-logo.png" alt="Discord" width="40"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="facebook-logo.png" alt="Facebook" width="40"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="twitter-logo.png" alt="Twitter" width="40"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="instagram-logo.png" alt="Instagram" width="40"></a>
+            <a href="https://www.tiktok.com/" target="_blank"><img src="tiktok-logo.png" alt="TikTok" width="40"></a>
+            <a href="https://www.yahoo.com/" target="_blank"><img src="yahoo-logo.png" alt="Yahoo" width="40"></a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Personal Website ni [Iyong Pangalan]. Lahat ng Karapatan Ay Nakalaan.
+    </footer>
+
+    <div class="login-panel">
+        <h2>Login Panel</h2>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br>
+            <input type="submit" value="Login">
+        </form>
+        <a href="forgot_password.php">Forgot Password?</a>
+    </div>
+
+    <script>
+        // Simulang animasyon ng loading
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector("body").style.visibility = "hidden";
+                document.querySelector(".loader").style.visibility = "visible";
+            } else {
+                document.querySelector(".loader").style.display = "none";
+                document.querySelector("body").style.visibility = "visible";
+            }
+        };
+    </script>
+</body>
+</html>
