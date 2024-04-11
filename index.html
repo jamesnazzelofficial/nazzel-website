@@ -3,41 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maangas na Website</title>
+    <title>James Nazzel|Official Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div id="loader"></div>
-    <div id="content">
-        <!-- Social Media Buttons -->
-        <div class="social-media">
-            <a href="https://discord.com"><img src="discord.png" alt="Discord"></a>
-            <a href="https://facebook.com"><img src="facebook.png" alt="Facebook"></a>
-            <!-- Dagdag dito ang iba pang social media buttons -->
+    <div id="content" class="hidden">
+        <header>
+            <h1>James Nazzel</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Tungkol sa Akin</a></li>
+                    <li><a href="#about sa pag ibig">Tungkol sa Pagmamahal</a></li>
+                    <li><a href="#social-media">Social Media</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about">
+            <div class="container">
+                <h2>Tungkol sa Akin</h2>
+        <p>Ang musika at pag-awit ay dalawang bahagi ng aking buhay na laging nagbibigay-saya at inspirasyon sa akin. Ang musika ay parang isang kaibigan na laging nariyan, handang makinig at magbigay-galak sa tuwing kailangan ko.</p>
+        <p>Sa bawat tugtugin ng aking paboritong kanta, nararamdaman ko ang init ng pagmamahal at ligaya na dulot nito sa aking puso. Ang pag-awit naman ay paraan ko ng pagpapahayag ng aking sarili, isang paraan upang ibahagi ang aking mga damdamin at mga kwento sa pamamagitan ng musika.</p>
+        <p>Sa mga sandaling malungkot ako, ang pagkanta ay nagbibigay-daan sa akin upang ilabas ang aking mga emosyon at magbigay-ginhawa sa aking puso. At sa mga sandaling masaya ako, ang musika ay nagbibigay-lakas sa akin upang magsaya at magpasalamat sa mga biyayang aking natatanggap.</p>
+        <p>Ang musika at pag-awit ay hindi lamang bahagi ng aking araw-araw na buhay, kundi ito rin ang nagbibigay-lakas at inspirasyon sa akin upang harapin ang mga hamon at tagumpay sa buhay. Salamat sa musika, dahil sa iyo, ang aking mundo ay puno ng kulay at musikang walang hanggan.</p>
+        
+        <section id="about sa pag ibig">
+            <div class="container">
+        <h2>Tungkol sa pagmamahal</h2>
+        <p>ang pag mamahal ay hindi yan madali nasa proseso din yan at wag dapat maging atat kung mag mamahal ka hintay mo na sagutin ka</p>
+        <p>kapag nag mahal ka dapat may time ka lagi sa kanya hindi yung iba yung pinag fofocus mo tulad ng sa pag lalaro dapat may time ka din pag dating sa bebe time</p>
+        <p>baka kasi dumating yung araw na wala na kayo dahil sa ugali mo lol</p>
+        <p>wag masyado seryosohin kapag minor kapa kasi ikaw din masasaktan sa huli yun pala ginamit kalang awts pain</p>
         </div>
+        </section>
+        <section id="social-media">
+            <div class="container">
+                <h2>Social Media</h2>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100077278495630"><i class="fab fa-facebook"></i></a>
+                    <a href="MESSENGER_LINK"><i class="fab fa-facebook-messenger"></i></a>
+                    <a href="https://www.instagram.com/jamesnazzelofficial"><i class="fab fa-instagram"></i></a>
+                    <a href="https://discord.com/invite/hxZ4XeBCAe"><i class="fab fa-discord"></i></a>
+                    <a href="TIKTOK_LINK"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.twitter.com/itsmenazzel"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/@jamesnazzelquinto4510"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </section>
 
-        <!-- Navigation Buttons -->
-        <div class="navigation">
-            <button onclick="location.href='about.html'">About</button>
-            <button onclick="location.href='contact.html'">Contact Us</button>
-            <!-- Dagdag dito ang iba pang navigation buttons -->
-        </div>
-
-        <!-- Forum Discussion -->
-        <iframe src="forum.html" width="100%" height="600" frameborder="0"></iframe> <!-- Palitan ang 'forum.html' sa link ng iyong forum -->
-
-        <!-- Comment Section -->
-        <div class="comments">
-            <h2>Comments</h2>
-            <!-- Dagdag dito ang comment section -->
-        </div>
-
-        <!-- Video Upload -->
-        <form action="upload.php" method="post" enctype="multipart/form-data">
-            <input type="file" name="video" accept="video/*">
-            <input type="submit" value="Upload Video">
-        </form>
+        <footer>
+            <p>&copy; 2024 James Nazzel Official. All rights reserved.</p>
+        </footer>
     </div>
-    <script src="script.js"></script>
+
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            const content = document.getElementById("content");
+
+            setTimeout(function () {
+                loader.style.display = "none";
+                content.classList.remove("hidden");
+            }, 2000); // 2000 milliseconds (2 seconds) loading time
+        });
+    </script>
 </body>
 </html>
